@@ -32,6 +32,10 @@ class CarWidget extends StatelessWidget {
                 "price: ${car.price.toString()}\$",
                 style: const TextStyle(color: Colors.black),
               ),
+              Text(
+                "color: ${car.color}",
+                style: const TextStyle(color: Colors.black),
+              ),
             ],
           ),
           trailing: Column(
