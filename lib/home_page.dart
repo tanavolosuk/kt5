@@ -16,9 +16,9 @@ class _HomePageState extends State<HomePage> {
   var url = 'https://myfakeapi.com/api/cars';
   List<Car> carList = [];
 
-  void getNetworkData() async {
+  void getNetworkData() async { 
     var response = await client.get(url);
-    carList = CarsData.fromJson(response.data).cars; //???
+    carList = CarsData.fromJson(response.data).cars; 
     //carList = carList.where((car) => car.availability).toList();
     setState(() {}); //говорит что ему надо перерисоваться
   }
@@ -34,9 +34,9 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     //???
     return Scaffold(
-      body: ListView.builder(
-        itemCount: carList.length,
-        itemBuilder: (context, index) {
+      body: ListView.builder( //ListView - линейный список прокручиваемых элементов
+        itemCount: carList.length, //количество объектов в списке
+        itemBuilder: (context, index) { //создает элемент списка
           return CarWidget(
             car: carList[index],
             index: index + 1,

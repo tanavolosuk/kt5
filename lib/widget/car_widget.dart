@@ -11,8 +11,8 @@ class CarWidget extends StatelessWidget {
     return Card(
       color: const Color.fromRGBO(255, 239, 213, 1),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-      child: ListTile(
-          leading: Text(
+      child: ListTile( //виджет, который может содержать от одной до трех строк текста, окруженных значками или другими виджетами
+          leading: Text( 
             index.toString(),
             style: const TextStyle(color: Colors.black, fontSize: 24),
           ),
