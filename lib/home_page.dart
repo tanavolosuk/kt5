@@ -4,7 +4,7 @@ import 'package:kt5/models/car/car.dart';
 import 'package:kt5/models/carsData/cars_data.dart';
 import 'package:kt5/widget/car_widget.dart';
 
-class HomePage extends StatefulWidget {
+class HomePage extends StatefulWidget { //виджет, который хранит состояние (нужно хранить то, что нужно перерисовать)
   const HomePage({super.key});
 
   @override

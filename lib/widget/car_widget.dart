@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:kt5/models/car/car.dart';
 
-class CarWidget extends StatelessWidget {
-  const CarWidget({super.key, required this.car, required this.index}); //???
+class CarWidget extends StatelessWidget { //виджет, не имеющий состояния
+  const CarWidget({super.key, required this.car, required this.index}); 
   final Car car;
   final int index;
 
